@@ -8,8 +8,9 @@ const Blog = () => {
   <div className="hero-content flex-col lg:flex-row">
     <img src="https://placeimg.com/260/400/arch" className="max-w-sm rounded-lg shadow-2xl " />
     <div>
-      <h1 className="text-3xl font-bold ">What is cors?</h1>
-      <h3 className="py-6 text-2xl ">CORS is a node.js package for providing a Connect/Express middleware that can be used to enable CORS with various options.</h3>
+      <h1 className="text-3xl font-bold ">What are the different ways to manage a state in a React application?</h1>
+      <h3 className="py-6 text-2xl ">The Four Kinds of React State to Manage
+Local state. Global state. Server state. URL state..</h3>
      
     </div>
   </div>
@@ -19,9 +20,8 @@ const Blog = () => {
   <div className="hero-content flex-col lg:flex-row">
     <img src="https://placeimg.com/260/400/arch" className="max-w-sm rounded-lg shadow-2xl" />
     <div>
-      <h1 className="text-3xl font-bold">Why are you using firebase? What other options do you have to implement authentication?</h1>
-      <h3 className="py-6 text-2xl ">Firebase helps you develop high-quality apps, grow your user base, and earn more money. Each feature works independently, and they work even better together.
-      Usually, authentication by a server entails the use of a user name and password. Other ways to authenticate can be through cards, retina scans, voice recognition, and fingerprints.</h3>
+      <h1 className="text-3xl font-bold">How does prototypical inheritance work?</h1>
+      <h3 className="py-6 text-2xl ">The Prototypal Inheritance is a feature in javascript used to add methods and properties in objects. It is a method by which an object can inherit the properties and methods of another object. Traditionally, in order to get and set the [[Prototype]] of an object, we use Object. getPrototypeOf and Object.</h3>
      
     </div>
   </div>
@@ -31,8 +31,8 @@ const Blog = () => {
   <div className="hero-content flex-col lg:flex-row">
     <img src="https://placeimg.com/260/400/arch" className="max-w-sm rounded-lg shadow-2xl" />
     <div>
-      <h1 className="text-3xl font-bold"> How does the private route work?</h1>
-      <h3 className="py-6 text-2xl ">The react private route component renders child components ( children ) if the user is logged in. If not logged in the user is redirected to the /login page with the return url passed in the location state property..</h3>
+      <h1 className="text-3xl font-bold"> What is a unit test? Why should we write unit tests?</h1>
+      <h3 className="py-6 text-2xl ">The main objective of unit testing is to isolate written code to test and determine if it works as intended. Unit testing is an important step in the development process, because if done correctly, it can help detect early flaws in code which may be more difficult to find in later testing stages.</h3>
      
     </div>
   </div>
@@ -43,9 +43,10 @@ const Blog = () => {
   <div className="hero-content flex-col lg:flex-row">
     <img src="https://placeimg.com/260/400/arch" className="max-w-sm rounded-lg shadow-2xl" />
     <div>
-      <h1 className="text-3xl font-bold"> What is Node? How does Node work?</h1>
-      <h3 className="py-6 text-2xl ">Node.js is an open-source, cross-platform, back-end JavaScript runtime environment that runs on a JavaScript Engine and executes JavaScript code outside a web browser, which was designed to build scalable network applications.
-      It is a used as backend service where javascript works on the server-side of the application. This way javascript is used on both frontend and backend. Node. js runs on chrome v8 engine which converts javascript code into machine code, it is highly scalable, lightweight, fast, and data-intensive.</h3>
+      <h1 className="text-3xl font-bold"> React vs. Angular vs. Vue?
+
+</h1>
+      <h3 className="py-6 text-2xl ">Vue provides higher customizability and hence is easier to learn than Angular or React. Further, Vue has an overlap with Angular and React with respect to their functionality like the use of components. Hence, the transition to Vue from either of the two is an easy option..</h3>
      
     </div>
   </div>
