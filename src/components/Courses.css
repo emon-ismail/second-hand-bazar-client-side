@@ -1,0 +1,25 @@
+.bodyy{
+    background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+}
+.topic{
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 2px;
+    box-shadow: 10px 10px 40px rgb(238, 140, 140);
+    color:black;
+    text-align: center;
+    font-size: larger;
+    margin: 15px;
+}
+.topic:hover{
+    color: rgb(231, 78, 28);
+  
+    box-shadow: 10px 10px 30px gray;
+   
+   
+    
+
+   
+
+   
+}
