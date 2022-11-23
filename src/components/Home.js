@@ -2,7 +2,7 @@ import { useContext } from 'react'
 import { Link } from 'react-router-dom'
 import { AuthContext } from '../contexts/UserContext'
 import "./Home.css"
-import pc from '../assets/pc.json'
+import buy from '../assets/buy.json'
 import Lottie from "lottie-react";
 
 const Home = () => {
@@ -11,48 +11,33 @@ const Home = () => {
     <section className='home-body'>
       <div className=''>
         <div className='container flex flex-col items-center px-4 py-16 pb-24 mx-auto text-center lg:pb-56 md:py-32 md:px-10 lg:px-32 text-gray-900'>
-          <h1 className='text-5xl font-bold leading-none sm:text-6xl xl:max-w-3xl text-gray-900'>
-            Welcome To Abacus Academy
+    
+  
+{
+  <div className="hero min-h-screen bg-base-200">
+  <div className="hero-content flex-col lg:flex-row-reverse">
+    <div className="text-center lg:text-left">
+   
+       <Lottie animationData={buy} loop={true} />
+    </div>
+    <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+      <div className="card-body">
+       
+      <h1 className='text-5xl font-bold leading-none sm:text-6xl xl:max-w-3xl text-gray-900'>
+            Welcome To Second Hand Bazar
           </h1>
           <p className='mt-6 mb-8 text-lg sm:mb-12 xl:max-w-3xl text-gray-900'>
-          Get Premium Courses
+          Get second hand products easily
           </p>
-   {/* Animation */}
-    <Lottie animationData={pc} loop={true} />
-  
+       
+      </div>
+    </div>
+  </div>
+</div>
 
-          <div className='flex flex-wrap justify-center'>
-            {user && user.uid ? (
-              <Link to='/courses'>
-                <button
-                  type='button'
-                  className='px-8 py-3 m-2 text-lg font-semibold rounded bg-gray-800 hover:bg-gray-700 text-gray-50'
-                >
-                  Explore  Courses
-                </button>
-              </Link>
-            ) : (
-              <>
-                {' '}
-                <Link to='/login'>
-                  <button
-                    type='button'
-                    className='px-8 py-3  m-2 text-lg font-semibold rounded bg-gray-800 hover:bg-gray-700 text-gray-50'
-                  >
-                    Login
-                  </button>
-                </Link>
-                <Link to='/register'>
-                  <button
-                    type='button'
-                    className='px-8 py-3 m-2 text-lg border rounded border-gray-700 text-gray-900'
-                  >
-                    Register
-                  </button>
-                </Link>
-              </>
-            )}
-          </div>
+
+
+}
         </div>
       </div>
     </section>

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './Topics.css'
-import ReactPrint from 'react-to-print'
+
 import {useRef} from 'react';
 import { useLoaderData } from 'react-router-dom';
 

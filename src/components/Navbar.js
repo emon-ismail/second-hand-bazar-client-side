@@ -23,15 +23,10 @@ const Navbar = () => {
         >
           
           <img src="abacus.png" className="w-20 h-15 text-white p-2  rounded-full" alt=""></img>
-          <span className='ml-3 text-xl'>Abacus Academy</span>
+          <span className='ml-3 text-xl'>Second Hand Bazar</span>
          
         </Link>
-         <button  
-           className='inline-flex items-center bg-gray-300 border-0 py-1 px-3 ml-7 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0'
-           >
-            
-            <Link to='/toggle'><input type="checkbox" class="toggle" checked /></Link>
-            </button>
+         
             
       
      
@@ -45,7 +40,7 @@ const Navbar = () => {
             Home
           </Link>
           <Link to='/courses' className='mr-5 hover:text-gray-900 font-bold'>
-                Courses
+                Products
               </Link>
 
           {user?.email ? (

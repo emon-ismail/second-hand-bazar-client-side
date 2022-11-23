@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactPrint from 'react-to-print'
+
 import {useRef} from 'react';
 import { useLoaderData } from 'react-router-dom';
 
@@ -28,7 +28,7 @@ const TopicDetails = () => {
     <p>{details}</p>
     <div className="card-actions">
  
-      <ReactPrint trigger={()=><button className='btn btn-primary' >Print</button>} content={()=>ref.current}  />
+      {/* <ReactPrint trigger={()=><button className='btn btn-primary' >Print</button>} content={()=>ref.current}  /> */}
     </div>
   </div>
 </div>
