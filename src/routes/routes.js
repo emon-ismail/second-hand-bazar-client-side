@@ -11,6 +11,7 @@ import Courses from '../components/Courses'
 import Toggle from '../components/Toggle'
 import Faq from '../components/Faq'
 import Blog from '../components/Blog'
+import Book from '../components/Book'
 
 
 import DashboardLayout from '../layout/Dashboardlayout/DashboardLayout'
@@ -19,12 +20,14 @@ import MyProduct from '../layout/Dashboardlayout/MyProduct'
 import AllUser from '../layout/Dashboardlayout/Allusers/AllUser'
 import CategoryItem from '../components/CategoryItem'
 import AdminRoute from './admin route/AdminRoute'
+import BookModal from '../components/BookModal'
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <Main />,
     errorElement: <ErrorPage />,
+   
    
    
     children: [
@@ -37,20 +40,18 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       
-// path:'/topics/${category_id}`',
 
-
-// {
-//   path:'/details/:id',
-//   element : <TopicDetails></TopicDetails>,
-//   loader : ({params}) => fetch(`https://abacus-academy-server.vercel.app/topicsDetails/${params.id}`)
-//             },
 {
   path:'/categories/:id',
   element:<CategoryItem></CategoryItem>,
   loader : ({params}) => fetch(`http://localhost:5000/allcategories/${params.id}`)
         },
 
+{
+  path:'/bookmodal',
+  element:<PrivateRoute> <Book></Book>  </PrivateRoute>,
+}
+,
 
 
       {
@@ -78,11 +79,12 @@ const router = createBrowserRouter([
         element: <Register />,
        
       },
+
       {
         path: '/courses',
         element: (
           <PrivateRoute>
-           
+           {/* <BookModal></BookModal> */}
             <Courses></Courses>
           </PrivateRoute>
         ),

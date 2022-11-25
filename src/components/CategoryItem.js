@@ -24,11 +24,9 @@ const CategoryItem = () => {
                                 <p>Location:{collection.location}</p>
                                 <p>Resale  Price:{collection.resalePrice}</p>
                                 <p>Years of Use:{collection.UseYear}</p>
-                                {/* <p>year Of Use:{collection.yearOfUse}</p>
-                                <p>Post Time:{collection.postTime}</p>
-                                <p>Seller Name:{collection.sellerName}</p> */}
+                   
                                 <div className="card-actions justify-end">
-                                    {/* <button className="btn btn-primary">Book Now</button> */}
+                                   
                                     <label 
                                     onClick={()=>{
                                         setTitle(collection.title)

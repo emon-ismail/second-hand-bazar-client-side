@@ -48,9 +48,9 @@ const Home = () => {
 
 {/* <ProductCategories></ProductCategories> */}
 
-  
+<AdvertisedItems></AdvertisedItems>
       <Courses></Courses>
-      <AdvertisedItems></AdvertisedItems>
+   
     </section>
   )
 }
