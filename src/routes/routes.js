@@ -13,6 +13,10 @@ import Faq from '../components/Faq'
 import Blog from '../components/Blog'
 import Topic from '../components/TopicDetails'
 import TopicDetails from '../components/TopicDetails'
+import DashboardLayout from '../layout/Dashboardlayout/DashboardLayout'
+import Dashboard from '../components/Dashboard'
+import MyProduct from '../layout/Dashboardlayout/MyProduct'
+import AllUser from '../layout/Dashboardlayout/Allusers/AllUser'
 
 const router = createBrowserRouter([
   {
@@ -31,7 +35,11 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       
-// path:'/topic/${category_id}`',
+// path:'/topics/${category_id}`',
+ {
+  path:'/topics/${topic.id}`',
+  element:<TopicDetails></TopicDetails>
+},
 
 {
   path:'/details/:id',
@@ -47,6 +55,10 @@ const router = createBrowserRouter([
         path:'/blog',
         element:<Blog></Blog>,
       },
+      // {
+      //   path:'/dashboard',
+      //   element:<DashboardLayout></DashboardLayout>,
+      // },
       {
       path:'/toggle',
       element:<Toggle></Toggle>
@@ -73,11 +85,27 @@ const router = createBrowserRouter([
         element: (
           <PrivateRoute>
             <Profile />
+            
           </PrivateRoute>
         ),
+        
       },
     ],
   },
+  {
+    path:'/dashboard',
+    element:<PrivateRoute><DashboardLayout></DashboardLayout></PrivateRoute>,
+    children:[
+      {
+        path:'/dashboard' ,
+        element: <MyProduct></MyProduct>,
+      },
+      {
+        path:'/dashboard/allusers' ,
+        element: <AllUser></AllUser>
+      },
+    ]
+  }
 ])
 
 export default router

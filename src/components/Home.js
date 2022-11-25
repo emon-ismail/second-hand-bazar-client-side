@@ -6,6 +6,7 @@ import buy from '../assets/buy.json'
 import Lottie from "lottie-react";
 import AdvertisedItems from './AdvertisedItems'
 import ProductCategories from './ProductCategories'
+import Courses from './Courses'
 
 const Home = () => {
   const { user } = useContext(AuthContext)
@@ -45,6 +46,7 @@ const Home = () => {
 
         </div>
         <ProductCategories></ProductCategories>
+        <Courses></Courses>
 
       </div>
     </section>

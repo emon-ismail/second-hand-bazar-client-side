@@ -21,7 +21,7 @@ const {category_id}=topic
    
         <div>
             <div>
-            <h1 className='Topics'> Topics : {topic?.length}</h1> 
+            <h1 className='Topics'> Categories</h1> 
           
             { 
                 topic?.map(top=>

@@ -14,7 +14,7 @@ const Courses = () => {
 
   
   useEffect(()=>{
-      fetch('https://abacus-academy-server.vercel.app/topics')
+      fetch('http://localhost:5000/allcategories')
       .then(res => res.json())
       .then(data=>setTopics(data))
     },[])
@@ -30,12 +30,27 @@ const Courses = () => {
           <div>
                 {
                     topics.map(topic=> <p key={topic.id}>
-                       <h1 className='topic'> <button onClick={()=>setTopicid(topic.id)}><h1 className=''> {topic.name} </h1></button></h1>
+                       <h1 className=''> <button onClick={()=>setTopicid(topic.id)}><h1 className='grid grid-cols-3  md:grid-cols-2 lg:grid-cols-3 mx-4 gap-5 '> </h1></button></h1>
 
-                    {/* <Link to={`/topics/${topic.id}`}>{topic.name}</Link> */}
+                   <h1 className='topic'> <Link to={`/topics/${topic.id}`}>{topic.name}</Link></h1>
                     </p>)
                 }
             </div>
+
+
+
+  {/* <div className="card w-70 bg-base-100 shadow-xl">
+  <figure><img src="https://placeimg.com/400/225/arch" alt="Shoes" /></figure>
+  <div className="card-body">
+    <h2 className="card-title">Shoes!</h2>
+    <p>If a dog chews shoes whose shoes does he choose?</p>
+    <div className="card-actions justify-end">
+      <button className="btn btn-primary">Category</button>
+    </div>
+  </div>
+</div> */}
+
+
 
         </div>
            

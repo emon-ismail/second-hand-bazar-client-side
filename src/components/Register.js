@@ -29,12 +29,13 @@ const Register = () => {
         updateName(name)
           .then(() => {
             toast.success('Name Updated')
-
+          saveUser( name,email)
             //3. Email verification
-            verifyEmail()
+          verifyEmail()
               .then(() => {
                 toast.success('Please check your email for verification link')
-                navigate(from, { replace: true })
+                // saveUser( name,email)
+                navigate(from, { replace: false })
               })
               .catch(error => {
                 toast.error(error.message)
@@ -54,6 +55,34 @@ const Register = () => {
       navigate(from, { replace: true })
     })
   }
+
+
+  const saveUser = (name, email) =>{
+    const user ={name, email};
+    fetch('http://localhost:5000/users', {
+        method: 'POST',
+        headers: {
+            'content-type': 'application/json'
+        },
+        body: JSON.stringify(user)
+    })
+    .then(res => res.json())
+    .then(data =>{
+        // setCreatedUserEmail(email);
+        getUserToken(email)
+    })
+} 
+const getUserToken=email=>{
+  fetch(`http://localhost:5000/jwt?email=${email}`)
+  .then(res=>res.json())
+  .then(data=>{
+    if (data.accessToken){
+      localStorage.setItem('access token',data.accessToken)
+      navigate('/')
+    }
+  })
+
+}
 
   return (
     <div className='flex justify-center items-center pt-8 register-body'>

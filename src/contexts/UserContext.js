@@ -37,7 +37,7 @@ const UserContext = ({ children }) => {
     return updateProfile(auth.currentUser, { displayName: name })
   }
 
-  //   3. Email Verify
+    // 3. Email Verify
   const verifyEmail = () => {
     setLoading(true)
     return sendEmailVerification(auth.currentUser)
