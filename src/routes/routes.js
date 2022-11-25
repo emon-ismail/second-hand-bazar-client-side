@@ -11,12 +11,13 @@ import Courses from '../components/Courses'
 import Toggle from '../components/Toggle'
 import Faq from '../components/Faq'
 import Blog from '../components/Blog'
-import Topic from '../components/TopicDetails'
-import TopicDetails from '../components/TopicDetails'
+
+
 import DashboardLayout from '../layout/Dashboardlayout/DashboardLayout'
 import Dashboard from '../components/Dashboard'
 import MyProduct from '../layout/Dashboardlayout/MyProduct'
 import AllUser from '../layout/Dashboardlayout/Allusers/AllUser'
+import CategoryItem from '../components/CategoryItem'
 
 const router = createBrowserRouter([
   {
@@ -36,16 +37,20 @@ const router = createBrowserRouter([
       },
       
 // path:'/topics/${category_id}`',
- {
-  path:'/topics/${topic.id}`',
-  element:<TopicDetails></TopicDetails>
-},
 
+
+// {
+//   path:'/details/:id',
+//   element : <TopicDetails></TopicDetails>,
+//   loader : ({params}) => fetch(`https://abacus-academy-server.vercel.app/topicsDetails/${params.id}`)
+//             },
 {
-  path:'/details/:id',
-  element : <TopicDetails></TopicDetails>,
-  loader : ({params}) => fetch(`https://abacus-academy-server.vercel.app/topicsDetails/${params.id}`)
-            },
+  path:'/categories/:id',
+  element:<CategoryItem></CategoryItem>,
+  loader : ({params}) => fetch(`http://localhost:5000/allcategories/${params.id}`)
+        },
+
+
 
       {
         path:'/faq',
@@ -70,6 +75,7 @@ const router = createBrowserRouter([
       {
         path: '/register',
         element: <Register />,
+       
       },
       {
         path: '/courses',

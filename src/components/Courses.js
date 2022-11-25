@@ -32,7 +32,7 @@ const Courses = () => {
                     topics.map(topic=> <p key={topic.id}>
                        <h1 className=''> <button onClick={()=>setTopicid(topic.id)}><h1 className='grid grid-cols-3  md:grid-cols-2 lg:grid-cols-3 mx-4 gap-5 '> </h1></button></h1>
 
-                   <h1 className='topic'> <Link to={`/topics/${topic.id}`}>{topic.name}</Link></h1>
+                   <h1 className='topic'> <Link to={`/categories/${topic.id}`}>{topic.name}</Link></h1>
                     </p>)
                 }
             </div>
