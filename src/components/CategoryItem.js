@@ -23,10 +23,10 @@ const CategoryItem = () => {
                                 <h2 className="card-title">{collection.title}</h2>
                                 <p>Location:{collection.location}</p>
                                 <p>Resale  Price:{collection.resalePrice}</p>
-                                <p>Orginal Price:{collection.orginalPrice}</p>
-                                <p>year Of Use:{collection.yearOfUse}</p>
+                                <p>Years of Use:{collection.UseYear}</p>
+                                {/* <p>year Of Use:{collection.yearOfUse}</p>
                                 <p>Post Time:{collection.postTime}</p>
-                                <p>Seller Name:{collection.sellerName}</p>
+                                <p>Seller Name:{collection.sellerName}</p> */}
                                 <div className="card-actions justify-end">
                                     {/* <button className="btn btn-primary">Book Now</button> */}
                                     <label 

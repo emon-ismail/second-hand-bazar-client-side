@@ -18,6 +18,7 @@ import Dashboard from '../components/Dashboard'
 import MyProduct from '../layout/Dashboardlayout/MyProduct'
 import AllUser from '../layout/Dashboardlayout/Allusers/AllUser'
 import CategoryItem from '../components/CategoryItem'
+import AdminRoute from './admin route/AdminRoute'
 
 const router = createBrowserRouter([
   {
@@ -106,9 +107,13 @@ const router = createBrowserRouter([
         path:'/dashboard' ,
         element: <MyProduct></MyProduct>,
       },
+      // {
+      //   path:'/dashboard/allusers' ,
+      //   element: <AdminRoute><AllUser></AllUser></AdminRoute>
+      // },
       {
         path:'/dashboard/allusers' ,
-        element: <AllUser></AllUser>
+        element: <AllUser> </AllUser>
       },
     ]
   }
