@@ -41,14 +41,16 @@ const Home = () => {
 
 
 }
-<AdvertisedItems></AdvertisedItems>
-
 
         </div>
-        {/* <ProductCategories></ProductCategories> */}
-        <Courses></Courses>
-
       </div>
+    
+
+{/* <ProductCategories></ProductCategories> */}
+
+  
+      <Courses></Courses>
+      <AdvertisedItems></AdvertisedItems>
     </section>
   )
 }
