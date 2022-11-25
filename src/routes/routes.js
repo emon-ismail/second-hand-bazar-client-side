@@ -44,7 +44,7 @@ const router = createBrowserRouter([
 {
   path:'/categories/:id',
   element:<CategoryItem></CategoryItem>,
-  loader : ({params}) => fetch(`http://localhost:5000/allcategories/${params.id}`)
+  loader : ({params}) => fetch(`https://assignment-12-server-zeta.vercel.app/allcategories/${params.id}`)
         },
 
 {

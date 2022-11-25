@@ -29,7 +29,7 @@ const BookModal = ({price,title,refetch,img}) => {
             meetLocation
 
         }
-        fetch('http://localhost:5000/bookings',{
+        fetch('https://assignment-12-server-zeta.vercel.app/bookings',{
             method: 'POST',
             headers:{
                 'content-type' : 'application/json'

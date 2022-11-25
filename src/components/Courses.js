@@ -16,7 +16,7 @@ const Courses = () => {
 
   
   useEffect(()=>{
-      fetch('http://localhost:5000/allcategories')
+      fetch('https://assignment-12-server-zeta.vercel.app/allcategories')
       .then(res => res.json())
       .then(data=>setTopics(data))
     },[])

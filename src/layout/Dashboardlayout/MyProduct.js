@@ -4,7 +4,7 @@ import { useQuery } from '@tanstack/react-query';
 
 const MyProduct = () => {
     const { user } = useContext(AuthContext);
-    const url = `http://localhost:5000/bookings`
+    const url = `https://assignment-12-server-zeta.vercel.app/bookings`
     const { data: bookings = [] } = useQuery({
         queryKey: ['bookings', user?.email],
         queryFn: async () => {
