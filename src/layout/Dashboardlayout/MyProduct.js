@@ -30,6 +30,7 @@ const MyProduct = () => {
                             <th>Location</th>
                             <th>Resale Price</th>
                             <th>Mobile Number</th>
+                            <th>Mobile </th>
                         </tr>
                     </thead>
                     <tbody>
