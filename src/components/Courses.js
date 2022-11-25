@@ -5,6 +5,8 @@ import ethImg from '../assets/eth.jpeg'
 import { AuthContext } from '../contexts/UserContext'
 import Topics from './Topics'
 import "./Courses.css"
+import Lottie from "lottie-react";
+import mail from '../assets/mail.json'
 
 const Courses = () => {
   const { user } = useContext(AuthContext)
@@ -88,6 +90,10 @@ const Courses = () => {
             Please Verify Your Email. After Verify You can access full Website
             <br />
             Verification Link Has Been Sent to Your Email Address
+
+            <div className='w-25'>
+            <Lottie animationData={mail} loop={true} />
+            </div>
           </p>
         </div>
       )}
